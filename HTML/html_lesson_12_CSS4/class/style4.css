@@ -1,0 +1,28 @@
+.horizontal-click [name="vkl"] { display: none; }
+.horizontal-click > :not(input):not(label) {
+  overflow: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0 .5em;
+  border: 1px solid #808080;
+  border-top-style: none;
+  transition: .5s;
+}
+.horizontal-click > label {
+  overflow: hidden;
+  display: block;
+  padding: .5em 1em;
+  background: #606060;
+  color: rgb(200,200,200);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.horizontal-click > :checked + label + * {
+  overflow: auto;
+  height: 310px;
+}
+.horizontal-click > :checked + label {
+  background: #454545;
+  cursor: default;
+}

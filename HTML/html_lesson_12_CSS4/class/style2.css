@@ -1,0 +1,32 @@
+.slideshow{
+	margin: 50px auto;
+	width:400px;
+	position: relative;
+}
+
+ul{list-style: none}
+
+.slideshow li{
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+.slideshow li img{
+	position: absolute;
+	top:50px;
+	left:0;
+	z-index: -1;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+
+.slideshow li img:target{
+	z-index:1;
+}
+
+.slideshow li img:not(:target){
+	opacity:0;
+}

@@ -1,0 +1,59 @@
+/*Универсальный селектор
+*{
+	margin: 0;
+	padding: 0;
+}*/
+/*Селектор элемента*/
+body{
+	background: #ffffee;
+	color: #d265d6;
+}
+h1{
+	color: #f00;
+	font-size:20px;
+}
+/*Селектор класса*/
+.green{
+	color:#0f0;
+}
+.center{
+	text-align: center;
+}
+.green.center{
+	text-shadow:0 0 3px #000;
+}
+/*Объединение тегов*/
+p, h1{
+	font-family: Arial;
+}
+/*Дочерний селектор*/
+.menu>li{
+	border-bottom: 3px #f00 dotted;
+}
+/*Контекстный селектор*/
+.menu li a{
+	color:#f00;
+	text-decoration: none;
+}
+.menu>li li{
+	border-bottom: 3px #00f solid;
+}
+/*Дочерний селектор*/
+#current>a{
+	color:#00ffff;
+}
+/*Родственный селектор*/
+blockquote~p{
+	text-align: right;
+	border-top:1px #333 dashed;
+}
+
+.test li:first-child, .test li:last-child{
+	background-color: #f90;
+}
+.test li:nth-child(2){background-color: #9f0;}
+.test li:nth-child(odd){color: #f09;font-style: italic;}
+.test li:nth-child(even){color: #09f;}
+.test li:nth-child(3n+1){font-weight: bold;}
+
+li:first{background:#333;}

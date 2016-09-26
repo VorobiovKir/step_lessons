@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+	height: 100%;
+}
+#wrapper {
+	min-width: 600px;
+	max-width: 1200px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+/* ---------Header--------*/
+#header {
+	height: 150px;
+	background: #FFE680;
+}
+/* -------Middle----------*/
+#middle {
+	width: 100%;
+	padding: 0 0 100px;
+	height: 1%;
+	position: relative;
+}
+#middle:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+#container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	background: #00F08E;
+}
+/* --------Left----------*/
+.left {
+	width: 30%;
+	float: left;
+	overflow: hidden;
+	background: #F0008E;
+}
+/* --------center----------*/
+.center {
+	width: 50%;
+	float: left;
+	overflow: hidden;
+	background: #00F08E;
+}
+/* --------right----------*/
+.right {
+	width: 20%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	background: #008EF0;
+}
+/* --------max 768----------*/
+@media screen and (max-width: 768px){
+	/* --------Left----------*/
+.left {
+	width: 40%;
+}
+/* --------center----------*/
+.center {
+	width: 60%;
+}
+/* --------right----------*/
+.right {
+	width: 100%;
+	height: 100%;
+}
+}
+/* --------max 480----------*/
+@media screen and (max-width: 480px){
+	/* --------Left----------*/
+.left {
+	width: 100%;
+}
+/* --------center----------*/
+.center {
+	width: 100%;
+}
+}
+/* --------Footer----------*/
+#footer {
+	margin: -100px auto 0;
+	min-width: 600px;
+	max-width: 1200px;
+	height: 100px;
+	background: #BFF08E;
+	position: relative;
+}
+	</style>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+	<div id="header">
+		<p>1</p>
+		<strong>Header:</strong>
+	</div><!-- #header-->
+
+	<div id="middle">
+
+		<div id="container">
+
+       <div class="left"><p>2</p><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at sollicitudin neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut pharetra rutrum justo, ac rutrum nisi vehicula eget. Etiam in pulvinar enim. Nulla luctus felis neque, nec porta turpis condimentum ut. Nunc sollicitudin sed nunc eu accumsan. Integer fermentum erat et bibendum venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit neque urna, non iaculis risus volutpat sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris sagittis condimentum est at scelerisque. Ut nibh mauris, scelerisque sit amet nunc nec, tempor vestibulum lectus. Ut luctus elit non sapien posuere vestibulum. Proin ante neque, ultrices ut dui ut, consequat luctus neque.</p></div>
+
+ 		<div class="center"><p>3</p><p> Fusce feugiat sem at volutpat condimentum. In feugiat nisl sit amet mi dictum dignissim. Nulla hendrerit, erat sit amet tincidunt rhoncus, erat ligula pretium neque, at congue sapien tellus vel mauris. Sed tincidunt leo a turpis posuere pharetra. Vivamus ornare urna non pretium malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec lectus felis. Pellentesque mollis non lacus sed dapibus. Suspendisse mi urna, interdum a varius a, dignissim eget risus. Etiam mi quam, ornare non orci in, gravida tincidunt lectus. Vestibulum ac consequat tortor.</p></div>
+		
+		<div class="right"><p>4</p><p> Fusce feugiat sem at volutpat condimentum. In feugiat nisl sit amet mi dictum dignissim. Nulla hendrerit, erat sit amet tincidunt rhoncus, erat ligula pretium neque, at congue sapien tellus vel mauris. Sed tincidunt leo a turpis posuere pharetra. Vivamus ornare urna non pretium malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec lectus felis. Pellentesque mollis non lacus sed dapibus. Suspendisse mi urna, interdum a varius a, dignissim eget risus. Etiam mi quam, ornare non orci in, gravida tincidunt lectus. Vestibulum ac consequat tortor.</p></div>
+
+		</div><!-- #container-->
+
+	</div><!-- #middle-->
+
+</div><!-- #wrapper -->
+
+<div id="footer">
+	<strong>Footer:</strong>
+</div><!-- #footer -->
+
+</body>
+</html>

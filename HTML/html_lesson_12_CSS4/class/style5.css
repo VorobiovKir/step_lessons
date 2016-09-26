@@ -1,0 +1,36 @@
+.horizontal-hover {
+  height: calc(310px + 35px*3 + 1px*2);
+  overflow: hidden;
+  outline: 1px solid #808080;
+} 
+.horizontal-hover,
+.horizontal-hover > li,
+.horizontal-hover > li > h4 {
+  display: block;
+  margin: 0;
+  padding: 0;
+} 
+.horizontal-hover > li > h4 {
+  overflow: hidden;
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #808080;
+  text-indent: .5em;
+  background: #606060;
+  color: rgb(200,200,200);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.horizontal-hover > li > div,
+.horizontal-hover:hover > li:not(:last-child):not(:hover) > div {
+  overflow: auto;
+  height: 0;
+  padding: 0 .5em;
+  transition: .5s;
+}
+.horizontal-hover > li:first-child > div,
+.horizontal-hover > li:last-child > div,
+.horizontal-hover > li:hover > div {
+  height: 310px;
+}
